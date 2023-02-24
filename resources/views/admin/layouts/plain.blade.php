@@ -15,6 +15,7 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Page CSS -->
     @stack('page-css')
     <!--[if lt IE 9]>

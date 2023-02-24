@@ -65,7 +65,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function(){
 });
 
 Route::middleware(['guest'])->prefix('admin')->group(function () {
-    Route::get('',[DashboardController::class,'Index']);
+    Route::get('/',[DashboardController::class,'Index']);
 
     Route::get('login',[LoginController::class,'index'])->name('login');
     Route::post('login',[LoginController::class,'login']);
@@ -79,6 +79,4 @@ Route::middleware(['guest'])->prefix('admin')->group(function () {
     Route::post('reset-password',[ResetPasswordController::class,'resetPassword'])->name('password.update');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LoginController::class,'index'])->name('login');

@@ -12,7 +12,23 @@ use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
-    public function index(){
+    private $purchase;
+    private $category;
+    private $supplier;
+    private $sale;
+
+    public function __construct(
+        Purchase $purchase,
+        Category $category,
+        Supplier $supplier,
+        Sale $sale
+    ) {
+        $this->purchase = $purchase;
+        $this->category = $category;
+        $this->supplier = $supplier;
+        $this->sale = $sale;
+    }
+    public function index() {
         $title = 'dashboard';
         $total_purchases = Purchase::where('expiry_date','!=',Carbon::now())->count();
         $total_categories = Category::count();
