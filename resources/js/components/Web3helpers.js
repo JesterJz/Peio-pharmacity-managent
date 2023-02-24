@@ -1,6 +1,8 @@
 import Web3 from "web3/dist/web3.min.js";
 
 import Auth from "../../../build/contracts/Auth.json";
+import CaleroMain from "../../../build/contracts/CaleroMain.json";
+import Ownable from "../../../build/contracts/Ownable.json";
 
 export const loadWeb3 = async () => {
   if (window.ethereum) {
@@ -34,6 +36,12 @@ export const loadBlockchainData = async () => {
       Auth.abi,
       Auth.networks[networkId].address
     );
-    return { auth, accounts: accounts[0] };
+
+    const calero = new web3.eth.Contract(
+      CaleroMain.abi,
+      CaleroMain.networks[networkId].address
+    );
+    
+    return { auth, accounts: accounts[0], calero };
   }
 };

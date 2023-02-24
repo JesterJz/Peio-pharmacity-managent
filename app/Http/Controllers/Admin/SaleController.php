@@ -90,7 +90,8 @@ class SaleController extends Controller
     {
         $this->validate($request,[
             'product'=>'required',
-            'quantity'=>'required|integer|min:1'
+            'total_price'=>'required',
+            // 'quantity'=>'required|integer|min:1'
         ]);
         $sold_product = Product::find($request->product);
         

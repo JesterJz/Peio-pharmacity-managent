@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{{asset('assets/plugins/select2/css/select2.min.css')}}">
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Page CSS -->
     @stack('page-css')
     <!--[if lt IE 9]>
@@ -90,6 +91,7 @@
 <script src="{{asset('assets/plugins/snackbar/snackbar.min.js')}}"></script>
 <!-- Select2 JS -->
 <script src="{{asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- Custom JS -->
 <script src="{{asset('assets/js/script.js')}}"></script>
 <script>

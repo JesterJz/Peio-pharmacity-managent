@@ -79,4 +79,7 @@ Route::middleware(['guest'])->prefix('admin')->group(function () {
     Route::post('reset-password',[ResetPasswordController::class,'resetPassword'])->name('password.update');
 });
 
-Route::get('/', [LoginController::class,'index'])->name('login');
+Route::get('/', function ()
+{
+    return view('welcome');
+});

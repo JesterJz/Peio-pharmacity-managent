@@ -9,6 +9,7 @@ contract Auth{
 
      struct user{
       string username;
+      string accountid;
       string email;
       string password;
   }
@@ -17,17 +18,18 @@ contract Auth{
 
    event userCreated(
       string username,
+      string accountid,
       string email,
       string password
     );
 
-  function createUser(string memory _username,string memory _email,string memory _password ) public {
+  function createUser(string memory _username,string memory _accountid,string memory _email,string memory _password ) public {
       
         userCount++;
 
-        usersList[_email] = user(_username,_email,_password);
+        usersList[_email] = user(_username, _accountid, _email,_password);
       
-        emit userCreated(_username,_email,_password);
+        emit userCreated(_username,_accountid,_email,_password);
     }
 
 
