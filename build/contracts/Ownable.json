@@ -2377,12 +2377,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xB6F8F9fE22D3F39987B933e400aB6aCc060c1ac9",
-      "transactionHash": "0x52cdc6f3a989575f56ec0226cfba91487246c350b8dd2aad05330323f0f68a3a"
+      "address": "0x555688919339506125598a14F70c7B325Ffacb46",
+      "transactionHash": "0x03a8f212d65aa8678f646f1bb67b3a20b72a2510dafb68b56046a18766a9832e"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-24T20:26:47.128Z",
+  "updatedAt": "2023-02-25T01:26:34.109Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "The Ownable contract has an owner address, and provides basic authorization control functions, this simplifies the implementation of \"user permissions\".",

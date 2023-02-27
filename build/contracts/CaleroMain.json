@@ -10011,12 +10011,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x81812ba256aE74c76c4225e5B1E77C069194ce4F",
-      "transactionHash": "0x22b62771dbadc153a761de0042f9e30f348e97caf6875863b75e57457ca932fa"
+      "address": "0x9214b2D897b20760b84d6d2A200dc508Ca5044AE",
+      "transactionHash": "0xb1de52ae198dc9f69db8e79799cd5cfcdd38fc115e5032dc28aefc4d2f39dcbf"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-24T20:26:47.110Z",
+  "updatedAt": "2023-02-25T01:26:34.091Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Calero platform main smart contract.",
